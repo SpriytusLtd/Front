@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- ビューポートの設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- タイトル -->
+  <title> lightbox </title>
+
+  <!-- スタイルシートの読み込み-->
+  <link href="lightbox.css" rel="stylesheet">
+
+</head>
+<body>
+  <h1 style="text-align:color:#d36015;"> lightboxの試作品です. </h1>
+  <p> 1ページ内に複数種類のモーダルウィンドウを設置する </p>
+
+  <HR style="margin: 3em 0;">
+  <!-- ここからモーダルウィンドウ -->
+  <!-- 1つ目のコンテンツ開始 -->
+  <div id="modal-content-01" class="modal-content">
+    <img src="IMG_0082.jpg" class="modal-img">
+    <p> みょーん。</p>
+    <p><a id="modal-close" class="button-link">閉じる</a></p>
+  </div>
+  <!-- 1つ目のコンテンツ終了 -->
+
+  <!-- 2つ目のコンテンツ開始 -->
+  <div id="modal-content-02" class="modal-content">
+    <img src="IMG_0226.jpg" class="modal-img">
+    <p> おかえり！</p>
+    <p><a id="modal-close" class="button-link">閉じる</a></p>
+  </div>
+  <!-- 2つ目のコンテンツ終了 -->
+
+  <!-- 3つ目のコンテンツ開始 -->
+  <div id="modal-content-03" class="modal-content">
+    <img src="あばばばばば.jpg" class="modal-img">
+    <p> あばばばばば</p>
+    <p><a id="modal-close" class="button-link">閉じる</a></p>
+  </div>
+  <!-- 3つ目のコンテンツ終了 -->
+
+  <p><a class="modal-syncer button-link" data-target="modal-content-01">クリックすると１つ目が開きます</a></p>
+  <p><a class="modal-syncer button-link" data-target="modal-content-02">クリックすると2つ目が開きます</a></p>
+  <p><a class="modal-syncer button-link" data-target="modal-content-03">クリックすると3つ目が開きます</a></p>
+
+  <HR style="margin: 3em 0;">
+    <!-- JavaScriptの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="modal-multi.js"></script>
+
+</body>
+</html>
