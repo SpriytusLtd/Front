@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>店舗のレビュー</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="./js/jquery.raty.js"></script>
+
+</head>
+
+<body background="./img/img1.jpg">
+  <div id="wrapper">
+    <header>
+      <h2>土佐の一風</h2>
+    </header>
+
+  <div id="info">
+    <img src="./img/tosa1.jpg" width="500" height="350" align="right">
+  <p align="left">
+    <center><br> <br>
+    住所：高知県高知市はりやま町1-6-1     <br>
+    <hr class="line">
+    電話番号：088-885-9640             <br>
+    <hr class="line">
+    営業時間：17:00~23:00              <br>
+    <hr class="line">
+    定休日：不定休（12/31および1/1を除く）<br>
+    <hr class="line">
+    席数：250（内カウンター席：12席）     <br>
+    <hr class="line">
+    平均予算：4000円                   <br>
+    <hr class="line">
+    特徴：カード可 / 個室 / 貸切可 / 飲み放題あり <br>
+    <hr class="line">
+    HP：<a href="http://www.ipphu.com" target="blank">http://www.ipphu.com</a> <br> <br>
+  </center>
+  </p>
+  </div>
+  <div class="text-area">
+    <div id="img1">
+      <p>
+
+      <script type="text/javascript">
+        $(function(){
+        	$('#star1').raty({ score: 5 });
+        	$('#star2').raty({ score: 5, readOnly: true });
+        	$('#star3').raty({ score: 2, readOnly: true });
+        });
+      </script>
+
+      <div id="star1"></div>
+
+      <textarea name="example1" cols="110" rows="15"></textarea>
+      <input type="submit" value="送信する">
+      </p>
+    </div>
+  </div>
+
+    <div id="review1">
+      <p>
+        spirytus（氏名）
+        <div id="star2"></div>
+        すごくおいしくて、雰囲気もよかったです！！<br>
+        すこし学生には高い気もしましたが、高級感のある空間のなかで大人な気分を味わえました！<br>
+      </p>
+    </div>
+
+    <div id="review2">
+        <p>
+          spirytus（氏名）
+          <div id="star3"></div>
+          すごくおいしくて、雰囲気もよかったです！！<br>
+          すこし学生には高い気もしましたが、高級感のある空間のなかで大人な気分を味わえました！<br>
+        </p>
+    </div>
+
+  </div>
+</body>
+</html>
