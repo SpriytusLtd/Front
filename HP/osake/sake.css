@@ -1,0 +1,167 @@
+html,body { height:100%; }
+
+
+#site-box {
+	width : 752px;
+	height: 100%;
+	margin-right: auto;
+	margin-left : auto;
+	padding:1px
+}
+
+#drink_name {
+	text-align: left;
+	font-size: 200%;
+	position: absolute;
+	top: 160px;
+	
+}
+
+#back_picture {
+	position: relative;
+	left: 170px;
+	
+}
+
+#drink_infomation{
+	position: relative;
+	top: 30px;
+	padding-bottom: 20px;
+}
+
+#drink_infomation_1 {
+	width:100%;
+	position: relative;
+	bottom: 170px;
+}
+
+#picture{
+	width:20%;
+	float:left;
+	
+}
+
+#drink_infomation_2{
+	width:50%;
+	float:left;
+	position: absolute;
+	left:170px;
+}
+
+#graph{
+	position: relative;
+	top: 10px;
+	left: 400px;
+}
+
+#tenpo{
+	width:100%;
+	position: absolute;
+	top:400px;
+	padding-bottom: 10px;
+}
+
+#tenpo_in{
+	position: relative;
+	bottom: 140px;
+	padding-bottom: 10px;
+}
+	
+
+#text {
+	font-size: 120%;
+	position: absolute;
+	bottom: 290px;
+	left:10px;
+}
+
+#back3 {
+	position: relative;
+	bottom: 300px;
+	left: 210;
+	
+	
+}
+
+#izakaya1 {
+	position: relative;
+	bottom: 420px;
+	left: 60;
+	
+}
+
+#izakaya2 {
+	position: relative;
+	bottom: 420px;
+	left: 60;	
+}
+
+#izakaya3 {
+	position: relative;
+	bottom: 420px;
+	left: 60;
+	
+}
+
+#infomation2{
+	position: relative;
+	bottom: 540px;
+	left: 240px;
+	padding-bottom: 1px;
+	border:1px;
+
+}
+
+
+#infomation3{
+	position: absolute;
+	top: 20px;
+	
+}
+
+#name1, #name2, #name3{
+	font-size: 150%;
+}
+
+#tenpo1{
+	position: absolute;
+	top:20px;
+	
+}
+
+#tenpo2{
+	position: absolute;
+	top:150px;		
+}
+
+#tenpo3{
+	position: absolute;
+	top:280px;		
+}
+
+#itiran{
+	position: absolute;
+	left:600px;
+	top: 120px;
+}
+
+	
+
+ul li {
+	font-size:100%;
+	list-style:none;
+	margin-top:10px;
+}
+
+label {
+	margin-right: 10px;
+	width:190px;
+	float: left;
+	font-size: 120%;
+}
+
+position: relative;
+	bottom: 300px;
+	left: 600px;
+	padding-bottom: 20px;
+	border:1px;
