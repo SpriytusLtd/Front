@@ -1,8 +1,44 @@
 <html>
 <head>
-<meta charset=hutf-8h>
-<link rel="stylesheet" href="sample3.css" type="text/css">
-<title> “X•Üƒ}ƒCƒy[ƒW “Û•º‰q“y²„ </title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="sample4.css" type="text/css">
+<title> åº—èˆ—ãƒã‚¤ãƒšãƒ¼ã‚¸ã€€å‘‘å…µè¡›åœŸä½å·¡ </title>
+<script src="jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+    var setFileInput = $('.imgInput'),
+    setFileImg = $('.imgView');
+
+    setFileInput.each(function(){
+        var selfFile = $(this),
+        selfInput = $(this).find('input[type=file]'),
+        prevElm = selfFile.find(setFileImg),
+        orgPass = prevElm.attr('src');
+
+        selfInput.change(function(){
+            var file = $(this).prop('files')[0],
+            fileRdr = new FileReader();
+
+            if (!this.files.length){
+                prevElm.attr('src', orgPass);
+                return;
+            } else {
+                if (!file.type.match('image.*')){
+                    prevElm.attr('src', orgPass);
+                    return;
+                } else {
+                    fileRdr.onload = function() {
+                        prevElm.attr('src', fileRdr.result);
+                    }
+                    fileRdr.readAsDataURL(file);
+                }
+            }
+        });
+    });
+});
+</script>
+
+
 </head>
 
 <body background="img/haikei2.jpg">
@@ -10,131 +46,184 @@
 <div id="site-box">
 
 <p class="title">
-	<img src="img/“Û•º‰q“y²„.png"
+	<img src="img/å‘‘å…µè¡›åœŸä½å·¡.png"
 	width="270" height="140" alt="title">
 </p>
 
 <p class="title_name">
-“X•Üî•ñ•ÒW‰æ–Ê
+åº—èˆ—æƒ…å ±ç·¨é›†ç”»é¢
 <br>
 </p>
 
+<div id="All">
 
 <div id="left">
-
+<br>
+<br>
+<br>
 <form>
 <ul>
 
 <li class="named">
-<label for="named">“X•Ü–¼:</label>
-<input type="text1" id="named" name="name" size="35" /> 
+<label for="named">åº—èˆ—å</label>
+<input type="text1" id="named" name="name" size="30" />
 </li>
 
 <li class="jusyo">
-<label for="josyo">ZŠ:</label>
-<input type="text1" id="jusyo" name="jusyo" size="35" /> 
+<label for="jusyo">ä½æ‰€:</label>
+<input type="text1" id="jusyo" name="jusyo" size="30" />
 </li>
 
 <li class="day">
-<label for="day">‰c‹Æ“ú:</label>
-<input type="text1" id="day" name="day" size="35" /> 
+<label for="day">å–¶æ¥­æ—¥:</label>
+<input type="text1" id="day" name="day" size="30" />
 </li>
 
 <li class="map">
-<label for="map">Œğ’Êè’i:</label>
-<input type="text1" id="map" name="map" size="35" />
+<label for="map">äº¤é€šæ‰‹æ®µ:</label>
+<input type="text1" id="map" name="map" size="30" />
 </li>
 
 <li class="seki">
-<label for="seki">‘ÀÈ”:</label>
-<input type="text1" id="seki" name="seki"  size="35"/> 
+<label for="seki">ç·åº§å¸­æ•°:</label>
+<input type="text1" id="seki" name="seki"  size="30"/>
 </li>
-
 
 <li class="kositu">
-<label for="seki">ŒÂº:</label>
-<input type="radio" name="seki" value="‚ ‚è" checked="checked"/> ‚ ‚è@
-<input type="radio" name="seki" value="‚È‚µ"/> ‚È‚µ@
+<label for="seki">å€‹å®¤:</label>
+<input type="radio" name="seki" value="ã‚ã‚Š" checked="checked"/> ã‚ã‚Š
+<input type="radio" name="seki" value="ãªã—"/> ãªã—
 </li>
 
-
 <li class="enkai">
-<label for="enkai">‰ƒ‰ïê:</label>
-<input type="radio" name="enkai" value="‚ ‚è" checked="checked"/> ‚ ‚è@
-<input type="radio" name="enkai" value="‚È‚µ"/> ‚È‚µ@
+<label for="enkai">å®´ä¼šå ´:</label>
+<input type="radio" name="enkai" value="ã‚ã‚Š" checked="checked"/> ã‚ã‚Š
+<input type="radio" name="enkai" value="ãªã—"/> ãªã—
 </li>
 
 <li class="kituen">
-<label for="kituen">‹i‰ŒÈ:</label>
-<input type="radio" name="kituen" value="‚ ‚è" checked="checked"/> ‚ ‚è@
-<input type="radio" name="kituen" value="‚È‚µ"/> ‚È‚µ@
+<label for="kituen">å–«ç…™å¸­:</label>
+<input type="radio" name="kituen" value="ã‚ã‚Š" checked="checked"/> ã‚ã‚Š
+<input type="radio" name="kituen" value="ãªã—"/> ãªã—
 </li>
 
 </ul>
 </form>
 </div>
-
-
 
 <div id="right">
 <form>
 <ul>
 
-<li class="‰æ‘œ">
-<label for="named">‰æ‘œ:</label>
-<img src="img/1.jpg"
-	width="120px" height="106px" alt="title">
+<li class="gazo">
+<label for="gazo">ç”»åƒ:</label>
+<div class="imgInput">
+<input type="file" name="file1">
+<img src="img/1.jpg" width="150px" height="124px" alt="" class="imgView">
+</div>
 </li>
 
-<li class="denwa">
-<label for="denwa">“d˜b”Ô†:</label>
-<input type="text1" id="denwa" name="denwa"  size="35"/> 
+<li class="phone">
+<label for="phone">é›»è©±ç•ªå·:</label>
+<input type="text1" id="phone" name="phone"  size="30"/>
 </li>
 
 <li class="time">
-<label for="time">‰c‹ÆŠÔ:</label>
-<input type="text1" id="time" name="time"  size="35"/> 
+<label for="time">å–¶æ¥­æ™‚é–“:</label>
+<input type="text1" id="time" name="time"  size="30"/>
 </li>
 
-<li class="yosan">
-<label for="yosan">•½‹Ï—\Z:</label>
-<input type="text1" id="yosan" name="yosan"  size="35"/> 
+<li class="money">
+<label for="money">å¹³å‡äºˆç®—:</label>
+<input type="text1" id="money" name="money"  size="30"/>
 </li>
 
-<li class="kosituN">
-<label for="kosituN">ŒÂº”:</label>
-<input type="text1" id="kosituN" name="kosituN"  size="10"/> 
+<li class="room1">
+<label for="room1">å€‹å®¤æ•°:</label>
+<input type="text1" id="room1" name="room1"  size="5"/>
 </li>
 
-<li class="NM">
-<label for="NM">‰ƒ‰ïê‚Ìû—el”:</label>
-<input type="text1" id="NM" name="NM"  size="10" /> 
+<li class="roomA">
+<label for="roomA">å®´ä¼šå ´åå®¹äººæ•°:</label>
+<input type="text1" id="roomA" name="roomA"  size="5" />
 </li>
 
-<li class="NM">
-<label for="NM">‹i‰ŒÈ”:</label>
-<input type="text1" id="NM" name="NM"  size="10" /> 
+<li class="roomS">
+<label for="roomS">å–«ç…™å¸­æ•°:</label>
+<input type="text1" id="roomS" name="roomS"  size="5" />
 </li>
 
 </ul>
 </form>
 </div>
+</div>
 
-<div id="iroiro">
+
+<div id="best_drink">
+	<form>
+	<ul>
+	<li class="best-drink">
+	<label for="best-drink">ä¸€ç•ªãŠã™ã™ã‚ã™ã‚‹åœ°é…’:</label>
+	<br>
+	<input type="text1" id="best-drink" name="best-drink"  size="5"/>
+	</li>
+	<br>
+	<li>
+	<label for="gazo">ç”»åƒ:</label>
+	<div class="imgInput">
+	<input type="file" name="file1">
+	<img src="img/1.jpg" width="220px" height="170px" alt="" class="imgView">
+	</div>
+	</li>
+	<li>
+	<label for="cook">ã‚³ãƒ¡ãƒ³ãƒˆ <br></label>
+	<textarea name="freeans" rows="10" cols="25"> </textarea>
+	</li>
+	</ul>
+</form>
+</div>
+
+<div id="best_cook">
+	<form>
+	<ul>
+	<li class="best-cook">
+	<label for="best-cook">ä¸€ç•ªãŠã™ã™ã‚ã™ã‚‹æ–™ç†:</label>
+	<br>
+	<input type="text1" id="best-cook" name="best-cook"  size="5"/>
+	</li>
+	<br>
+	<li>
+	<label for="gazo">ç”»åƒ:</label>
+	<div class="imgInput">
+	<input type="file" name="file2">
+	<img src="img/1.jpg" width="220px" height="170px" alt="" class="imgView">
+	</div>
+	</li>
+	<li>
+	<label for="cook">ã‚³ãƒ¡ãƒ³ãƒˆ <br></label>
+	<textarea name="freeans" rows="10" cols="25"> </textarea>
+	</li>
+	</ul>
+</form>
+</div>
+
+
+
+<div id="favorite">
 
 <div id="osake">
-<label for="osake">æ‚èˆµ‚Á‚Ä‚¢‚é‚¨ğ <br></label>
-<textarea name="freeans" rows="10" cols="30"> </textarea>
+<label for="osake">ãŠã™ã™ã‚åœ°é…’ <br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
 </div>
 
 <div id="food">
-<label for="food">æ‚èˆµ‚Á‚Ä‚¢‚éHŞ <br></label>
-<textarea name="freeans" rows="10" cols="30"> </textarea>
+<label for="food">ãŠã™ã™ã‚é£Ÿæ<br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
 </div>
 
-<div id="kyodo">
-<label for="kyodo">æ‚èˆµ‚Á‚Ä‚¢‚é‹½“y—¿— <br></label>
-<textarea name="freeans" rows="10" cols="30"> </textarea>
+<div id="cook">
+<label for="cook">ãŠã™ã™ã‚ä¸€å“æ–™ç† <br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
 </div>
 
 </div>
@@ -144,13 +233,13 @@
 <ul>
 
 <li class="HP">
-<label for="HP">©“X•Ü‚ÌHP‚ÌURL:</label>
-<input type="text2" id="HP" name="HP"  size="55" value=http://> 
+<label for="HP">åº—èˆ—ã®HPã®URL:</label>
+<input type="text2" id="HP" name="HP"  size="55" value=http://>
 </li>
 
 <li class="AP">
-<label for="AP">ƒAƒs[ƒ‹ƒ|ƒCƒ“ƒg:</label>
-<input type="text2" id="AP" name="AP"  size="58"/> 
+<label for="AP">ã‚¢ãƒ”ãƒ¼ãƒ«ãƒã‚¤ãƒ³ãƒˆ:</label>
+<input type="text2" id="AP" name="AP"  size="55"/>
 </li>
 
 </ul>
@@ -159,8 +248,8 @@
 
 
 <p class="complete">
-<a href="“X•Üƒ}ƒCƒy[ƒW•ÒWŠ®—¹.html">
-<input type="submit" value="•ÒWŠ®—¹" />
+<a href="åº—èˆ—ãƒã‚¤ãƒšãƒ¼ã‚¸ç·¨é›†å®Œäº†.html">
+<input type="submit" value="ç·¨é›†å®Œäº†" />
 </a>
 </p>
 

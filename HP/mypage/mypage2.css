@@ -35,7 +35,7 @@
 	text-align: left;
 	position: relative;
 	left: 70px;
-	top: 10px
+	top: 10px;
 }
 
 #kejiban2{
@@ -105,7 +105,26 @@
 
 #sonota {
 	text-align:center;
+}
 
+#title_name2{
+	text-align: center;
+	width:100%;
+	font-size: 200%;
+}
+
+#left3{
+	float:left;
+	width:50%;
+}
+
+#right3{
+	float:right;
+	width:50%;
+}
+
+.complete{
+	float:right;
 }
 
 ul li {
