@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex,nofollow">
+
+		<!-- ビューポートの設定 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- スタイルシートの読み込み -->
+		<link href="to-top.css" rel="stylesheet">
+
+		<title>jQueryで実装する「TOPへ戻るボタン」のサンプルデモ</title><!--
+
+/********************************************************************************
+
+	SYNCER 〜 知識、感動をみんなと同期(Sync)するブログ
+
+	* 注意
+	このプログラムは、jQueryを利用しています。
+
+	* 配布場所
+	https://syncer.jp/jquery-to-top-button
+
+	* 動作確認
+	https://syncer.jp/jquery-to-top-button/demo/to-top.html
+
+	* 最終更新日時
+	2015/08/17 11:22
+
+	* 作者
+	あらゆ
+
+	** 連絡先
+	Twitter: https://twitter.com/arayutw
+	Facebook: https://www.facebook.com/arayutw
+	Google+: https://plus.google.com/114918692417332410369/
+	E-mail: info@syncer.jp
+
+	※ バグ、不具合の報告、提案、ご要望など、お待ちしております。
+	※ 申し訳ありませんが、ご利用者様、個々の環境における問題はサポートしていません。
+
+********************************************************************************/
+
+		-->
+	</head>
+<body>
+
+
+
+<h1 style="text-align:center;color:#d36015;">jQueryで実装する「TOPへ戻るボタン」のサンプルデモ</h1>
+<p>スクロールするとゆっくり右下に出現する「TOPへ戻るボタン」のデモンストレーションです。画面を上下にスクロールして、動作を確認してみて下さい。</p>
+
+<HR style="margin: 3em 0 ;">
+
+<div class="content">
+
+	<!-- ここから真ん中の縦線の要素 -->
+	<div style="position:relative; height:2000px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:1000px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:750px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:500px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:250px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:100px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:50px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:25px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:15px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:10px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+
+	<div style="position:relative; height:5px; margin-top:100px;">
+		<p style="width:6px; background:#888; height:100%; position:absolute; top:0; left:50%; margin:0 0 0 -3px;"></p>
+	</div>
+	<!-- ここまで真ん中の縦線の要素 -->
+
+	<!-- ここからボタン -->
+	<div id="page-top" class="page-top">
+		<p><a id="move-page-top" class="move-page-top">▲</a></p>
+	</div>
+	<!-- ここまでボタン -->
+
+</div>
+
+<HR style="margin: 3em 0 ;">
+
+
+
+<p style="text-align:center"><a href="https://syncer.jp/jquery-to-top-button">配布元: Syncer</a></p>
+
+
+
+
+<!-- JavaScriptの読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="to-top.js"></script>
+
+
+
+
+</body>
+</html>
