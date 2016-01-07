@@ -1,74 +1,107 @@
 <html>
 <head>
-<meta charset=hutf-8h>
+<meta charset="utf-8">
+<link rel="stylesheet" href="mypage2.css" type="text/css">
+<title> ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ç·¨é›†ã€€å‘‘å…µè¡›åœŸä½å·¡ </title>
+<script src="jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+    var setFileInput = $('.imgInput'),
+    setFileImg = $('.imgView');
 
-<link rel="stylesheet" href="mypage.css" type="text/css">
-<title> ƒ†[ƒUƒ}ƒCƒy[ƒW “Û•º‰q“y²„ </title>
+    setFileInput.each(function(){
+        var selfFile = $(this),
+        selfInput = $(this).find('input[type=file]'),
+        prevElm = selfFile.find(setFileImg),
+        orgPass = prevElm.attr('src');
 
+        selfInput.change(function(){
+            var file = $(this).prop('files')[0],
+            fileRdr = new FileReader();
+
+            if (!this.files.length){
+                prevElm.attr('src', orgPass);
+                return;
+            } else {
+                if (!file.type.match('image.*')){
+                    prevElm.attr('src', orgPass);
+                    return;
+                } else {
+                    fileRdr.onload = function() {
+                        prevElm.attr('src', fileRdr.result);
+                    }
+                    fileRdr.readAsDataURL(file);
+                }
+            }
+        });
+    });
+});
+</script>
 </head>
- 
+
 <body background="../img/haikei2.jpg">
 <div id="site-box">
 
-<p class="title">
-	<img src="../img/“Û•º‰q“y²„.png"
+<div id="title">
+	<img src="../img/å‘‘å…µè¡›åœŸä½å·¡.png"
 	width="270" height="140" alt="title">
-</p>
+</div>
 
-<div id="hajime">
-<p class="title_name">
-ƒvƒƒtƒB[ƒ‹‚Ì•ÒW
-</p>
+<div id="title_name2">
+ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ç·¨é›†
+</div>
 
-<div id=left>
+<div id="left3">
 <form>
 <ul>
+
 <li class="e-mail">
-<label for="e-mail">E-mailƒAƒhƒŒƒX:</label>
-<input type="text1" id="e-mail" name="e-mail" size="35" /> 
+<label for="e-mail">E-mailã‚¢ãƒ‰ãƒ¬ã‚¹:</label>
+<input type="text3" id="e-mail" name="e-mail" size="40" />
 </li>
 
-<li class="name">
-<label for="name">ƒ†[ƒUƒl[ƒ€:</label>
-<input type="text1" id="name" name="name" size="35" /> 
+<li class="Y_name">
+<label for="Y_name">ãƒ¦ãƒ¼ã‚¶ãƒãƒ¼ãƒ :</label>
+<input type="text3" id="Y_name" name="Y_name" size="40" />
 </li>
 
 <li class="seibetu">
-<label for="seibetu">«•Ê:</label>
-<input type="radio" name="seibetu" value="’j" checked="checked"/> ’j@
-<input type="radio" name="seibetu" value="—"/> —
+<label for="seibetu">æ€§åˆ¥:</label>
+<input type="radio" name="seibetu" value="ç”·" checked="checked"/> ç”·
+<input type="radio" name="seibetu" value="å¥³"/> å¥³
+</li>
+
+<li class="old">
+<label for="old">å¹´é½¢:</label>
+<input type="text3" id="old" name="old" size="40" />
+</li>
+
+<li class="from">
+<label for="from">å‡ºèº«:</label>
+<input type="text3" id="from" name="from" size="40" />
 </li>
 
 </ul>
 </form>
 </div>
 
-<div id="right2">
+<div id="right3">
 <form>
 <ul>
-<li class="‰æ‘œ">
-<label for="picture">‰æ‘œ:</label>
-<img src="../img/ˆÀ¼æ¶.jpg"
-	width="160px" height="140px" alt="picture">
+<li>
+<label for="gazo">ç”»åƒ:</label>
+	<div class="imgInput">
+	<input type="file" name="file1">
+	<img src="../img/å®‰è¥¿å…ˆç”Ÿ.jpg" width="218px" height="180px" alt="" class="imgView" />
+	</div>
 </li>
-
-<li class="old">
-<label for="old">”N—î:</label>
-<input type="text1" id="old" name="old" size="35" /> 
-</li>
-
-<li class="from">
-<label for="from">og:</label>
-<input type="text1" id="from" name="from" size="35" /> 
-</li>
-
 </ul>
 </form>
 </div>
 
 <p class="complete">
-<a href="ƒ†[ƒUƒ}ƒCƒy[ƒW.html">
-<input type="submit" value="•ÒWŠ®—¹" />
+<a href="ãƒ¦ãƒ¼ã‚¶ãƒã‚¤ãƒšãƒ¼ã‚¸.html">
+<input type="submit" value="ç·¨é›†å®Œäº†" />
 </a>
 </p>
 
