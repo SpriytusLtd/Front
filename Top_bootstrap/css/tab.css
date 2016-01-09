@@ -1,0 +1,24 @@
+img.tab-content{
+width:100%;
+height:100%;
+}
+img.haikei{
+  width:100%;
+  height:100%;
+}
+body{
+  background:#fffafa;
+  color:#555;
+}
+header{
+  color:white;
+}
+/*.active p{
+color:white;
+}*/
+#header_login{
+  color:white;
+}
+/*.center-block{
+  color:black;
+}*/
