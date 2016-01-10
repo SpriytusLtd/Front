@@ -22,3 +22,13 @@ color:white;
 /*.center-block{
   color:black;
 }*/
+.center{
+  width:30%;
+  float:left;
+  margin: 15px;;
+}
+.center2{
+  width:20%;
+  float:left;
+  margin: 25px;;
+}
