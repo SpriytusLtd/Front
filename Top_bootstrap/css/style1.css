@@ -10,3 +10,18 @@ background-image: url(img1.jpg);
   position:absolute;
   top:0;
 }
+#average_budget{
+  width:100%;
+  height:300px;
+}
+#event{
+  width:100%;
+  height:300px;
+}
+img.event_float{
+  width:50%;
+  height:50%;
+}
+.event_float{
+  float:left;
+}
