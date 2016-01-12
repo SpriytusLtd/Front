@@ -1,9 +1,13 @@
+
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="sample4.css" type="text/css">
 <title> 店舗マイページ　呑兵衛土佐巡 </title>
 <script src="mypage/jquery-2.1.4.min.js"></script>
+<script src="../top/top.js"></script>
 <script>
 $(function(){
     var setFileInput = $('.imgInput'),
@@ -40,8 +44,8 @@ $(function(){
 
 
 </head>
-
-<body background="img/haikei2.jpg">
+<body>
+<!-- <body background="img/haikei2.jpg"> -->
 
 <div id="site-box">
 
@@ -65,7 +69,7 @@ $(function(){
 <ul>
 
 <li class="named">
-<label for="named">店舗名</label>
+<label for="named">店舗名:</label>
 <input type="text1" id="named" name="name" size="30" />
 </li>
 
@@ -119,7 +123,7 @@ $(function(){
 <label for="gazo">画像:</label>
 <div class="imgInput">
 <input type="file" name="file1">
-<img src="img/1.jpg" width="150px" height="124px" alt="" class="imgView">
+<img src="img/1.jpg" width="180px" height="124px" alt="" class="imgView">
 </div>
 </li>
 
@@ -165,7 +169,7 @@ $(function(){
 	<li class="best-drink">
 	<label for="best-drink">一番おすすめする地酒:</label>
 	<br>
-	<input type="text1" id="best-drink" name="best-drink"  size="5"/>
+	<input type="text1" id="best-drink" name="best-drink"  size="8"/>
 	</li>
 	<br>
 	<li>
@@ -189,7 +193,7 @@ $(function(){
 	<li class="best-cook">
 	<label for="best-cook">一番おすすめする料理:</label>
 	<br>
-	<input type="text1" id="best-cook" name="best-cook"  size="5"/>
+	<input type="text1" id="best-cook" name="best-cook"  size="8"/>
 	</li>
 	<br>
 	<li>
@@ -253,6 +257,11 @@ $(function(){
 </a>
 </p>
 
+<div class=content>
+<div id="page-top" class="page-top">
+        <p><a id="move-page-top" class="move-page-top"><img src = "../Top_bootstrap/img/pt.png"></a></p>
+</div>
+</div>
 
 </div>
 </body>
