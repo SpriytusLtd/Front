@@ -3,24 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>お酒のレビュー</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="./css/top.css" rel="stylesheet">
 <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 <script type="application/javascript" src="./js/jquery.raty.js"></script>
+<script type="text/javascript"></script>
+<script src="./js/top.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('#star1').raty({ score: 5 , half: true });
+    $('#star2').raty({ score: 5, readOnly: true, half: true });
+    $('#star3').raty({ score: 2, readOnly: true, half: true });
+    $('#star4').raty({ score: 5 , half: true });
+    $('#star5').raty({ score: 5 , half: true });
+    $('#star6').raty({ score: 5 , half: true });
+    $('#star7').raty({ score: 5 , half: true });
+  });
+</script>
 
 </head>
 
-<body background="./img/img1.jpg">
+<body>
   <div id="wrapper">
-    <header>
-      <h2>瀧嵐</h2>
-    </header>
+    <header><br><br></header>
+
+  <div id="waku1">
+
+  <div id="img">
+  <img src="./img/osake.jpg" width="500" height="400" align="right">
+  </div>
 
   <div id="info">
-    <img src="./img/osake.jpg" width="500" height="350" align="right">
     <p aligin="left">
       <center>
       <br><br>
-      <h4>瀧嵐</h4>
+      <h2>瀧嵐</h2>
         四国でも良質の水が流れる川として上位に格付けされている <br>
         「仁淀川」の水を使用した、<br>
         透明感のあるキレのあるお酒です。<br>
@@ -32,25 +52,28 @@
     </p>
   </div>
 
+
+
   <div class="text-area">
-    <div id="img1">
-      <p>
 
-      <script type="text/javascript">
-        $(function(){
-        	$('#star1').raty({ score: 5 });
-        	$('#star2').raty({ score: 5, readOnly: true });
-        	$('#star3').raty({ score: 2, readOnly: true });
-        });
-      </script>
-
-      <div id="star1"></div>
-
-      <textarea name="example1" cols="110" rows="15"></textarea>
-      <input type="submit" value="送信する">
-      </p>
-    </div>
+  <div id="review">
+    <h3>お酒のレビュー投稿欄</h3>
   </div>
+
+  <div id="textbox">
+    <textarea name="example1" cols="70" rows="18"></textarea>
+  </div>
+
+  <div id ="star">
+    総合評価<div id="star1"></div>
+    甘さ<div id="star4"></div>
+    辛さ<div id="star5"></div>
+    渋さ<div id="star6"></div>
+    濃く<div id="star7"></div>
+    <br>
+  <input type="submit" value="送信する">
+  </div>
+</div>
 
     <div id="review1">
       <p>
@@ -69,7 +92,14 @@
           値段はすこし高い気もしましたが、すっきりとした味わいが絶妙でした！<br>
         </p>
     </div>
-
+   </div>
   </div>
+
+   <div class="content">
+    <div id="page-top" class="page-top">
+     <p><a id="move-page-top" class="move-page-top"><img src="./img/pt.png"></a></p>
+    </div>
+   </div>
+
 </body>
 </html>

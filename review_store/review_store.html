@@ -2,23 +2,39 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>店舗のレビュー</title>
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="./css/top.css" rel="stylesheet">
 <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 <script type="application/javascript" src="./js/jquery.raty.js"></script>
+<script type="text/javascript"></script>
+<script src="./js/top.js"></script>
+<script>
+  $(function(){
+    $('#star1').raty({ score: 5, half: true });
+    $('#star2').raty({ score: 5, readOnly: true, half: true});
+    $('#star3').raty({ score: 2, readOnly: true, harf:true });
+  });
+</script>
 
 </head>
 
-<body background="./img/img1.jpg">
+<body>
   <div id="wrapper">
-    <header>
-      <h2>土佐の一風</h2>
-    </header>
+    <header><br><br><br></header>
+
+  <div id="waku1">
+
+  <div id="img">
+  <img src="./img/tosa1.jpg" width="500" height="400" align="right">
+  </div>
 
   <div id="info">
-    <img src="./img/tosa1.jpg" width="500" height="350" align="right">
   <p align="left">
-    <center><br> <br>
+    <center>
+      <h2>土佐の一風</h2>
     住所：高知県高知市はりやま町1-6-1     <br>
     <hr class="line">
     電話番号：088-885-9640             <br>
@@ -37,24 +53,23 @@
   </center>
   </p>
   </div>
+  </div>
+
+<div id="waku2">
   <div class="text-area">
+
+    <div id="review">
+      <h3>店舗のレビュー投稿欄</h3>
+    </div>
+
     <div id="img1">
       <p>
-
-      <script type="text/javascript">
-        $(function(){
-        	$('#star1').raty({ score: 5 });
-        	$('#star2').raty({ score: 5, readOnly: true });
-        	$('#star3').raty({ score: 2, readOnly: true });
-        });
-      </script>
-
       <div id="star1"></div>
-
       <textarea name="example1" cols="110" rows="15"></textarea>
       <input type="submit" value="送信する">
       </p>
     </div>
+
   </div>
 
     <div id="review1">
@@ -76,5 +91,16 @@
     </div>
 
   </div>
+</div>
+
+ <div class="content">
+  <div id="page-top" class="page-top">
+   <p><a id="move-page-top" class="move-page-top"><img src="./img/pt.png"></a></p>
+  </div>
+ </div>
+
+
+
+
 </body>
 </html>

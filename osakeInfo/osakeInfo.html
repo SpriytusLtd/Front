@@ -3,32 +3,38 @@
 <head>
 <meta charset="utf-8">
 <title>お酒詳細</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="./css/top.css" rel="stylesheet">
 <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 <script type="application/javascript" src="./js/jquery.raty.js"></script>
+<script type="text/javascript"></script>
+<script src="./js/top.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('#star1').raty({ score: 4, readOnly: true });
+  });
+</script>
+
 </head>
 
-<body background="./img/img1.jpg">
+<body>
+  <header></header>
   <div id="wrapper">
-    <header>
-      <h2>瀧嵐</h2>
-    </header>
+
+  <div id="waku1">
+
+  <div id="img">
+  <img src="./img/osake.jpg" width="500" height="400" align="right">
+  </div>
 
   <div id="info">
-    <img src="./img/osake.jpg" width="500" height="400" align="right">
   <p align="left">
     <center>
-
-    <script type="text/javascript">
-      $(function(){
-        $('#star1').raty({ score: 4, readOnly: true });
-      });
-    </script>
-
-    <br>
-    <div id="star1"></div>
-
-      <h4>瀧嵐</h4>
+    <h2>瀧嵐</h2>
+    <div id="star1"></div><br>
         四国でも良質の水が流れる川として上位に格付けされている <br>
         「仁淀川」の水を使用した、<br>
         透明感のあるキレのあるお酒です。<br>
@@ -40,16 +46,18 @@
     </center>
   </p>
   </div>
+</div>
 
   <br><br>
 
+<div id="store">
   <div id="store1">
     <div id="header">
     <h4><a href="../storeInfo/storeInfo.html" target="blank">土佐の一風</a></h4>
-  </div>
-  <div id="img1">
-    <img src="./img/tosa1.jpg" width="250" height="200" align="left">
-  </div>
+    </div>
+    <div id="img1">
+      <img src="./img/tosa1.jpg" width="250" height="200" align="left">
+    </div>
     <div id="text">
       料亭仕込みの味を気軽に楽しめる居心地の良さが自慢です！！<br>
       <hr class="line"></hr>
@@ -78,7 +86,16 @@
       平均予算：4000円<br>
     </div>
   </div>
+</div>
 
   </div>
+
+     <div class="content">
+      <div id="page-top" class="page-top">
+       <p><a id="move-page-top" class="move-page-top"><img src="./img/pt.png"></a></p>
+      </div>
+     </div>
+
+
 </body>
 </html>
