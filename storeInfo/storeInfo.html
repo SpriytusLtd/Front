@@ -2,31 +2,39 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>店舗詳細</title>
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="./css/top.css" rel="stylesheet">
 <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 <script type="application/javascript" src="./js/jquery.raty.js"></script>
+<script type="text/javascript"></script>
+<script src="./js/top.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('#star1').raty({ score: 4, readOnly: true });
+  });
+</script>
+
 </head>
 
-<body background="./img/img1.jpg">
+<body>
   <div id="wrapper">
-    <header>
-      <h2>土佐の一風</h2>
-    </header>
+    <header><br><br><br><br></header>
+
+  <div id="waku1">
+
+  <div id="img">
+    <img src="./img/tosa1.jpg" width="500" height="400" align="right">
+  </div>
 
   <div id="info">
-    <img src="./img/tosa1.jpg" width="500" height="400" align="right">
   <p align="left">
     <center>
-
-    <script type="text/javascript">
-      $(function(){
-        $('#star1').raty({ score: 4, readOnly: true });
-      });
-    </script>
-
+    <h2>土佐の一風</h2>
     <div id="star1"></div>
-
     <br>
     住所：高知県高知市はりやま町1-6-1     <br>
     <hr class="line">
@@ -47,10 +55,13 @@
   </center>
   </p>
   </div>
+</div>
+
+
   <div class="text-area">
-    <div id="img1">
-      <img src="./img/img2.jpg" width="400" height="350" align="right">
-      <p aligin="left">
+    <div id="box1">
+    <div id="text1">
+      <p>
         <center>
         <br><br>
       	<h4>瀧嵐</h4>
@@ -61,6 +72,10 @@
           歌人 吉井勇 が詠い愛した高知のお酒。<br>
       </center>
       </p>
+    </div>
+
+    <div id="img1">
+      <img src="./img/img2.jpg" width="400" height="350">
     </div>
 
     <div id="info1">
@@ -86,21 +101,26 @@
 
       </p>
     </div>
+  </div>
 
+  <div id="box2">
     <div id="img2">
-      <img src="./img/img3.jpg" width="400" height="350" align="left">
-      <p aligin="right">
+      <img src="./img/img3.jpg" width="400" height="350">
+    </div>
+
+    <div id="text2">
+      <p>
         <center>
-        <br><br>
+        <br>
         <h4>かつおの塩たたき</h4>
         鮮度抜群のかつおを楽しみたいなら、塩で頂くのが高知流。<br><br>
         かつおの塩たたきは、<br>
         鮮度の差がはっきり味わいに出るので、<br>
         釣りたてのかつおをぜひ土佐の一風で堪能頂きください。
         <h4>鰹の脂と旨味が口の中にジュワッ！</h4>
-      </center>
-        </p>
-      </div>
+        </center>
+      </p>
+    </div>
 
       <div id="info2">
         <p aligin="left">
@@ -118,8 +138,6 @@
             鰹の塩たたき・タレたたき<br><br>
             チャンバラ貝・長太郎貝<br><br>
             ウツボのたたき<br>
-
-
           </div>
 
           <div id="info2_right">
@@ -127,13 +145,17 @@
             土佐ジローの出し巻<br><br>
             四万十のりの天ぷら<br>
           </div>
-
         </p>
       </div>
+    </div>
 
+    <div id="box3">
       <div id="img3">
-        <img src="./img/img4.jpg" width="400" height="350" align="right">
-        <p aligin="left">
+        <img src="./img/img4.jpg" width="400" height="350">
+      </div>
+
+      <div id="text3">
+        <p>
           <center>
           <br><br>
           <h4>はりまや橋</h4>
@@ -145,9 +167,16 @@
         </center>
         </p>
       </div>
-
    </div>
+ </div>
 
   </div>
+
+   <div class="content">
+    <div id="page-top" class="page-top">
+     <p><a id="move-page-top" class="move-page-top"><img src="./img/pt.png"></a></p>
+    </div>
+   </div>
+
 </body>
 </html>
