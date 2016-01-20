@@ -78,14 +78,14 @@ label {
 #best_drink{
 	width: 49%;
  	float:left;
-	background-color: #dddddd;
+	background-color: rgba(140, 50, 50, 0.2);
 	border-width: 1px;
 }
 
 #best_cook{
 	width: 49%;
 	float:right;
-	background-color: #dddddd;
+	background-color: rgba(140, 50, 50, 0.2);
 	position: relative;
 	bottom: 2px;
 }
