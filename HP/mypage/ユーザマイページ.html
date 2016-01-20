@@ -7,13 +7,21 @@
 <title> ユーザマイページ　呑兵衛土佐巡 </title>
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 <script type="application/javascript" src="jquery.raty.js"></script>
-<script src="../../top/top.js"></script>
+<script src="../../top/js/top.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('#star1').raty({ readOnly: true ,score: 4 });
 	$('#star2').raty({ readOnly: true ,score: 4 });
 	$('#star3').raty({ readOnly: true ,score: 5 });
 	$('#star4').raty({ readOnly: true ,score: 5 });
+	$('#star5').raty({ readOnly: true ,score: 4 });
+	$('#star6').raty({ readOnly: true ,score: 5 });
+	$('#star7').raty({ readOnly: true ,score: 5 });
+
+	$('#star10').raty({ readOnly: true ,score: 4 });
+	$('#star11').raty({ readOnly: true ,score: 5 });
+	$('#star12').raty({ readOnly: true ,score: 4 });
+	$('#star13').raty({ readOnly: true ,score: 5 });
 
 
 });
@@ -30,7 +38,7 @@ $(function(){
 </p>
 
 <div id="top">
-<div id="title_name">
+<div id="user_name">
 ANZAI　さんのマイページ
 </div>
 
@@ -41,14 +49,8 @@ ANZAI　さんのマイページ
 </div>
 </div>
 
-<div id=profile_all>
-
-<div id="kejiban">
-	<img src="../img/siro.png"
-	width="750" height="200" alt="kejiban">
-</div>
-
 <div id="profile">
+
 <div id="face">
 	<img src="../img/安西先生.jpg"
 	width="160" height="140" alt="title">
@@ -62,27 +64,19 @@ ANZAI　さんのマイページ
  性別：男性　年齢：21　出身：神奈川  <br>
  <br>
 </div>
-</div>
-</div>
 
-<div id=favorite_all>
-
-<div id="kejiban2">
-	<img src="../img/siro.png"
-	width="750" height="250" alt="kejiban">
 </div>
 
-<div id="favorite">
 
-<p class="okiniiri">お気に入り一覧 </p>
+<div id="Favorite">
 
-<div id="left">
+<div id="F_osake">
+
+<div id="osake">お気に入りしたお酒一覧</div>
+
+<div id="F_osake_infomation">
 <form>
 <ul>
-
-<li class="sake">
-<label for="sake">お酒</label>
-</li>
 
 <li class="osake1">
 <input type="checkbox" id="osake1" name="osake1" />
@@ -99,17 +93,27 @@ ANZAI　さんのマイページ
 <label for="time">ダバダ火振</label>
 </li>
 
+<li class="osake3">
+<input type="checkbox" id="osake2" name="osake2" />
+<label for="time">ダバダ火振</label>
+</li>
+
+<li class="osake3">
+<input type="checkbox" id="osake2" name="osake2" />
+<label for="time">ダバダ火振</label>
+</li>
+
 </ul>
 </form>
 </div>
+</div>
 
-<div id="right1">
+
+<div id="F_mise">
+<div id="mise">お気に入りした店舗一覧</div>
+<div id="F_mise_infomation">
 <form>
 <ul>
-
-<li class="mise">
-<label for="mise">店舗</label>
-</li>
 
 <li class="mise1">
 <input type="checkbox" id="mise1" name="mise1" />
@@ -121,6 +125,22 @@ ANZAI　さんのマイページ
 <label for="time">スピリトゥス・レクティフ(ry</label>
 </li>
 
+<li class="osake2">
+<input type="checkbox" id="mise2" name="mise2" />
+<label for="time">スピリトゥス・レクティフ(ry</label>
+</li>
+
+<li class="osake2">
+<input type="checkbox" id="mise2" name="mise2" />
+<label for="time">スピリトゥス・レクティフ(ry</label>
+</li>
+
+<li class="osake2">
+<input type="checkbox" id="mise2" name="mise2" />
+<label for="time">スピリトゥス・レクティフ(ry</label>
+</li>
+
+
 </ul>
 </form>
 </div>
@@ -130,78 +150,96 @@ ANZAI　さんのマイページ
 
 <div id="Review">
 
-<p class="kejiban3">
-	<img src="../img/siro.png"
-	width="750" height="350" alt="take">
-</p>
-
-<div id="R">
-
-<div id="R-osake">
-<p class="review_title">レビューしたお酒の一覧</p>
-
+<div id="R_osake">
+<div id="R_osake_title">レビューしたお酒の一覧</div>
+<div id="R_osake_infomation">
 <form>
 <ul>
 <li class="osake1">
-<input type="checkbox" id="osake1" name="osake1" />
-<label for="denwa">spirytus:癖になる美味さ。おすすめ</label>
+	<input type="checkbox" id="osake1" name="osake1" />
+	<label for="osake1">spirytus: </label>
+	<div id="star5"> </div>
+  <div class="comment">癖になるおいしさ　オススメ </div>
 </li>
 
 <li class="osake2">
-<input type="checkbox" id="osake2" name="osake2" />
-<label for="time">土佐鶴：あの辛さが最高にいいね</label>
+	<input type="checkbox" id="osake2" name="osake2" />
+	<label for="osake1">土佐鶴: </label>
+	<div id="star6"> </div>
+	<div class="comment">あの辛さが最高に良い</div>
 </li>
 
 
 <li class="osake2">
-<input type="checkbox" id="osake2" name="osake2" />
-<label for="time">土佐鶴：あの辛さが最高にいいね</label>
+	<input type="checkbox" id="osake3" name="osake3" />
+	<label for="osake1">土佐鶴: </label>
+	<div id="star7"> </div>
+	<div class="comment">あの辛さが最高に良い</div>
 </li>
+
+<li class="osake2">
+	<input type="checkbox" id="osake3" name="osake3" />
+	<label for="osake1">土佐鶴: </label>
+	<div id="star12"> </div>
+	<div class="comment">あの辛さが最高に良い</div>
+</li>
+
+<li class="osake2">
+	<input type="checkbox" id="osake3" name="osake3" />
+	<label for="osake1">土佐鶴: </label>
+	<div id="star13"> </div>
+	<div class="comment">あの辛さが最高に良い</div>
+</li>
+
 </ul>
-
 </form>
-
+</div>
 </div>
 
-<div id="R-mise">
-<p class="review_title">レビューした店舗一覧 </p>
+
+<div id="R_mise">
+<div id="R_mise_title">レビューした店舗一覧 </div>
+<div id="R_mise_infomation">
 <form>
 <ul>
 <li class="mise1">
-<div id="left2">
 <input type="checkbox" id="mise1" name="mise1" />
-<label for="mise1">すぴりたす: </label>
-</div>
+<label for="mise1">すぴりたす:</label>
 <div id="star1"> </div>
-<div id="right2">
-駅から近いし、料理も美味しい </label>
-</div>
+<div class="comment">駅から近いし、料理も美味しい </div>
 </li>
 
-<li class="omise2">
-<div id="left2">
+<li class="mise2">
 <input type="checkbox" id="mise2" name="mise2" />
 <label for="mise2">スピリタス:</label>
-</div>
 <div id="star3"> </div>
-<div id="right2">
-<label for="mise2">雰囲気がいい。落ち着く。</label>
-</div>
+<div class="comment">雰囲気がいい。落ち着く。</div>
 </li>
 
-<li class="omise2">
-<div id="left2">
+<li class="mise2">
 <input type="checkbox" id="mise2" name="mise2" />
 <label for="mise2">スピリタス:</label>
-</div>
 <div id="star4"> </div>
-<div id="right2">
-<label for="mise2">雰囲気がいい。落ち着く。</label>
-</div>
+<div class="comment">雰囲気がいい。落ち着く。</div>
+</li>
+
+<li class="mise2">
+<input type="checkbox" id="mise2" name="mise2" />
+<label for="mise2">スピリタス:</label>
+<div id="star10"> </div>
+<div class="comment">雰囲気がいい。落ち着く。</div>
+</li>
+
+<li class="mise2">
+<input type="checkbox" id="mise2" name="mise2" />
+<label for="mise2">スピリタス:</label>
+<div id="star11"> </div>
+<div class="comment">雰囲気がいい。落ち着く。</div>
 </li>
 </ul>
 </form>
 
+</div>
 </div>
 </div>
 
@@ -210,12 +248,11 @@ ANZAI　さんのマイページ
 |　退会される方はこちらを<a href="../退会フォーム.html"><input type="submit" value="クリック" /></a>
 </div>
 
-</div>
 
 <div class="content">
         <!-- ここからボタン -->
         <div id="page-top" class="page-top">
-          <p><a id="move-page-top" class="move-page-top"><img src = "../../Top_bootstrap/img/pt.png"></a></p>
+          <p><a id="move-page-top" class="move-page-top"><img src = "../../top/img/pt.png"></a></p>
         </div>
       </div>
 

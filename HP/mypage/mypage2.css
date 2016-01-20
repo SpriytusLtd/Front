@@ -13,108 +13,116 @@ body{
 	margin-left : auto;
 }
 
-#title_name {
+#user_name{
 	font-size: 150%;
 	width	: 50%;
 	float: left;
 }
 
-#profile_all {
-	text-align: left;
-	width:100%;
-	position: relative;
-	top:0px;
+
+
+#top {
+  width:100%;
+  height:40px;
 }
 
-#profile {
-	position: absolute;
-	top:35px;
-	left:60px;
+#profile{
+  width:100%;
+  height:200px;
+  background-color: rgba(140, 50, 50, 0.2);
 }
 
-#face {
-	width:30%;
-		position: relative;
-		float: left;
+#hensyu{
+  text-align: right;
+}
+
+#face{
+  width:40%;
+  height:140px;
+  float:left;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #profile_infomation{
-	font-size: 120%;
-	width:100%;
-	text-align: left;
-	position: relative;
-	left: 70px;
-	top: 10px;
+  width:60%;
+  height:110px;
+  float:right;
+  text-align: left;
+  padding-top: 50px;
 }
 
-#kejiban2{
-	width:100%;
-	float:center;
-	padding-top: 30px;
+
+#Favorite{
+  width:100%;
+  height:210px;
+  padding-top: 20px;
 }
 
-#favorite_all{
-	width: 100%;
-	position: relative;
-	bottom:0px;
+#F_osake{
+  width:48%;
+  height:210px;
+  float:left;
 }
 
-#favorite{
-	width:65%;
-	position:absolute;
-	top:40px;
-	left:100px;
+#F_mise{
+  width:48%;
+  height:210px;
+  float:right;
 }
 
+#mise, #osake{
+  width:100%;
+  height:20px;
+  font-size: 120%;
+}
+
+#F_osake_infomation,#F_mise_infomation{
+  width: 100%;
+  height:190px;
+  background-color: rgba(140, 50, 50, 0.2);
+  overflow: auto;
+}
 
 
 #Review{
-	position: relative;
-	top:10px;
+  width:100%;
+  height:300px;
+  padding-top: 20px;
 }
 
-#R {
-	position: absolute;
-	bottom: 55px;
-	left: 20px;
+#R_osake{
+  width:48%;
+  height:290px;
+  float:left;
 }
 
-.review_title{
-	font-size: 120%;
+#R_mise{
+  width:48%;
+  height:300px;
+  float:right;
+}
+
+#R_osake_title, #R_mise_title{
+  width:100%;
+  height:20px;
+  font-size: 120%;
+}
+
+#R_osake_infomation, #R_mise_infomation{
+  width:100%;
+  height:270px;
+  background-color: rgba(140, 50, 50, 0.2);
+  overflow: auto;
+}
+
+#sonota{
+  width:100%;
+  height: 20px;
+  text-align: center;
 }
 
 
-
-#left {
-	float: left;
- 	width : 49%;
-	position: relative;
-	bottom: 30px;
-}
-
-#right1 {
-	float: right;
-	width : 49%;
-	position: relative;
-	bottom: 30px;
-}
-
-#left2 {
-	float: left;
-	width: 40%;
-}
-
-#right2 {
-	float: right;
-	width: 100%;
-	position:relative;
-	left:220px;
-	bottom:20px;
-}
-
-#sonota {
-	text-align:center;
-}
 
 #title_name2{
 	text-align: center;
