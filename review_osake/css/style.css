@@ -26,12 +26,6 @@ body{
 
 }
 
-
-#body{
-  width: 750px;
-  height: 100%;
-}
-
 #wrapper{
   width: 95%;
 }
@@ -58,17 +52,7 @@ body{
   text-align: center;
 }
 
-#review1{
-  margin: 15px auto;
-  padding: 10px 5px 20px;
-  width: 95%;
-  background-color: #fff;
-  position: relative;
-  top: 0;
-  left:30px;
-}
-
-#review2{
+.review1{
   margin: 15px auto;
   padding: 10px 5px 20px;
   width: 95%;
