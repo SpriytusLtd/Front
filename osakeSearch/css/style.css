@@ -19,18 +19,18 @@ body{
 }
 
 #store1{
-      height:250px;
-      border:1px solid #808080;
-      margin: 15px auto;
-      padding: 10px 5px 50px;
-      width: 1000px;
-      background-color: #fff;
-      position: relative;
-      top: 0;
-      left:30px;
-      margin-right: auto;
-      margin-left: auto;
-      }
+  height:250px;
+  border:1px solid #808080;
+  margin: 15px auto;
+  padding: 10px 5px 50px;
+  width: 1000px;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left:30px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 #header{
   width: 1000px;
