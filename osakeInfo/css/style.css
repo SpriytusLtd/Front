@@ -43,7 +43,7 @@ header{
   width: 95%;
 }
 
-#store1{
+.store1{
       width: 1000px;
       height:270px;
       border:1px solid #808080;
