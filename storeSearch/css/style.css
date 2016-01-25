@@ -9,13 +9,14 @@ body{
     background: url("../img/img1.jpg"), url("../img/img2.jpg");
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.8;
-  　width: 750px;
+  　width: 100%;
   　height: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #wrapper{
-  width: 95%;
+  width: 100%;
 }
 
 .store1{
