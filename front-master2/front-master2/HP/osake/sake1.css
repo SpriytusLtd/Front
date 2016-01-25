@@ -1,0 +1,57 @@
+
+#site-box {
+	width : 752px;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+#drink_name {
+	font-size: 200%;
+}
+
+#drink_infomation{
+	position: relative;
+	top:2px;
+}
+
+#back_picture{
+	position: relative;
+	left:170px;
+}
+
+#picture{
+	width:20%;
+	float:left;
+}
+
+#drink_infomation_1{
+	position:absolute;
+	top:0px;
+}
+
+#drink_infomation_2 {
+	width:50%;
+	float:left;
+	position: relative;
+	left:20px;
+}
+
+#graph {
+	position: relative;
+	left:85px;
+	top:10px;
+}
+
+
+ul li {
+	font-size:100%;
+	list-style:none;
+	margin-top:10px;
+}
+
+label {
+	margin-right: 10px;
+	width:190px;
+	float: left;
+	font-size: 120%;
+}

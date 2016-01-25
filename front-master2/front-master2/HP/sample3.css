@@ -1,0 +1,101 @@
+body{
+	color:#555;
+	/*background :url(img/tosa.png);*/
+	background : url(img/tosa.png),url(img/S_haikei.jpg);
+	background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+#site-box {
+	 width : 60%;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+.title_name {
+	text-align: center;
+	font-size: 300%;
+}
+
+.text {
+	text-align: center;
+	font-size: 150%;
+
+}
+
+input[type="name"] , input[type="e-mail"] {
+	font-size: 90%
+}
+
+input[type="text1"] {
+	font-size: 120%;
+}
+
+input[type="radio"] {
+	margin-top: 10px;
+}
+
+.kotira {
+	text-align: center;
+}
+
+.joho_left {
+	text-align: left;
+	font-size: 150%;
+}
+
+ul li {
+	list-style: none;
+	margin-top: 10px;
+}
+
+label {
+	margin-right: 10px;
+	width:190px
+	float: left;
+	font-size: 150%;
+}
+
+
+
+
+#left {
+	float: left;
+ 	width : 49%;
+}
+
+#right {
+	float: right;
+	width : 49%
+}
+
+
+#iroiro{
+	text-align: center;
+}
+
+#osake {
+	float: left;
+	width: 33%;
+}
+
+#food {
+	float: left;
+	width: 33%;
+}
+#kyodo {
+	float: left;
+	width: 33%
+}
+
+input[type="text2"] {
+	margin-top: 20px;
+	font-size: 120%
+}
+
+.complete {
+	float: right;
+
+}

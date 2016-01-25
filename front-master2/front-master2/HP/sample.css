@@ -1,0 +1,45 @@
+
+#site-box {
+	 width : 752px;
+	margin-right: auto;
+	margin-left : auto;
+
+}
+
+#title {
+	float: left;
+	font-size:150%
+}
+
+#koumoku {
+	float: right;
+        font-size:90%
+}
+
+#gazou {
+	text-align: center;
+}
+
+#setumei {
+	text-align: center;
+}	
+
+
+#usui {
+	opacity: 0.5;
+        font-size:90%
+}
+
+#movie {
+	text-align: center;
+}
+
+#owari {
+	text-align: center;
+	font-size:130%
+}
+
+figure.box {
+	float: left;
+	padding-right: 20px;
+}

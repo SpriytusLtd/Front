@@ -1,0 +1,268 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="sample4.css" type="text/css">
+<title> 店舗マイページ　呑兵衛土佐巡 </title>
+<script src="mypage/jquery-2.1.4.min.js"></script>
+<script src="../top/top.js"></script>
+<script>
+$(function(){
+    var setFileInput = $('.imgInput'),
+    setFileImg = $('.imgView');
+
+    setFileInput.each(function(){
+        var selfFile = $(this),
+        selfInput = $(this).find('input[type=file]'),
+        prevElm = selfFile.find(setFileImg),
+        orgPass = prevElm.attr('src');
+
+        selfInput.change(function(){
+            var file = $(this).prop('files')[0],
+            fileRdr = new FileReader();
+
+            if (!this.files.length){
+                prevElm.attr('src', orgPass);
+                return;
+            } else {
+                if (!file.type.match('image.*')){
+                    prevElm.attr('src', orgPass);
+                    return;
+                } else {
+                    fileRdr.onload = function() {
+                        prevElm.attr('src', fileRdr.result);
+                    }
+                    fileRdr.readAsDataURL(file);
+                }
+            }
+        });
+    });
+});
+</script>
+
+
+</head>
+<body>
+<!-- <body background="img/haikei2.jpg"> -->
+
+<div id="site-box">
+
+<p class="title">
+	<img src="img/呑兵衛土佐巡.png"
+	width="270" height="140" alt="title">
+</p>
+
+<p class="title_name">
+店舗情報編集画面
+<br>
+</p>
+
+<div id="All">
+
+<div id="left">
+<br>
+<br>
+<br>
+<form>
+<ul>
+
+<li class="named">
+<label for="named">店舗名:</label>
+<input type="text1" id="named" name="name" size="30" />
+</li>
+
+<li class="jusyo">
+<label for="jusyo">住所:</label>
+<input type="text1" id="jusyo" name="jusyo" size="30" />
+</li>
+
+<li class="day">
+<label for="day">営業日:</label>
+<input type="text1" id="day" name="day" size="30" />
+</li>
+
+<li class="map">
+<label for="map">交通手段:</label>
+<input type="text1" id="map" name="map" size="30" />
+</li>
+
+<li class="seki">
+<label for="seki">総座席数:</label>
+<input type="text1" id="seki" name="seki"  size="30"/>
+</li>
+
+<li class="kositu">
+<label for="seki">個室:</label>
+<input type="radio" name="seki" value="あり" checked="checked"/> あり
+<input type="radio" name="seki" value="なし"/> なし
+</li>
+
+<li class="enkai">
+<label for="enkai">宴会場:</label>
+<input type="radio" name="enkai" value="あり" checked="checked"/> あり
+<input type="radio" name="enkai" value="なし"/> なし
+</li>
+
+<li class="kituen">
+<label for="kituen">喫煙席:</label>
+<input type="radio" name="kituen" value="あり" checked="checked"/> あり
+<input type="radio" name="kituen" value="なし"/> なし
+</li>
+
+</ul>
+</form>
+</div>
+
+<div id="right">
+<form>
+<ul>
+
+<li class="gazo">
+<label for="gazo">画像:</label>
+<div class="imgInput">
+<input type="file" name="file1">
+<img src="img/1.jpg" width="180px" height="124px" alt="" class="imgView">
+</div>
+</li>
+
+<li class="phone">
+<label for="phone">電話番号:</label>
+<input type="text1" id="phone" name="phone"  size="30"/>
+</li>
+
+<li class="time">
+<label for="time">営業時間:</label>
+<input type="text1" id="time" name="time"  size="30"/>
+</li>
+
+<li class="money">
+<label for="money">平均予算:</label>
+<input type="text1" id="money" name="money"  size="30"/>
+</li>
+
+<li class="room1">
+<label for="room1">個室数:</label>
+<input type="text1" id="room1" name="room1"  size="5"/>
+</li>
+
+<li class="roomA">
+<label for="roomA">宴会場収容人数:</label>
+<input type="text1" id="roomA" name="roomA"  size="5" />
+</li>
+
+<li class="roomS">
+<label for="roomS">喫煙席数:</label>
+<input type="text1" id="roomS" name="roomS"  size="5" />
+</li>
+
+</ul>
+</form>
+</div>
+</div>
+
+
+<div id="best_drink">
+	<form>
+	<ul>
+	<li class="best-drink">
+	<label for="best-drink">一番おすすめする地酒:</label>
+	<br>
+	<input type="text1" id="best-drink" name="best-drink"  size="8"/>
+	</li>
+	<br>
+	<li>
+	<label for="gazo">画像:</label>
+	<div class="imgInput">
+	<input type="file" name="file1">
+	<img src="img/1.jpg" width="220px" height="170px" alt="" class="imgView">
+	</div>
+	</li>
+	<li>
+	<label for="cook">コメント <br></label>
+	<textarea name="freeans" rows="10" cols="25"> </textarea>
+	</li>
+	</ul>
+</form>
+</div>
+
+<div id="best_cook">
+	<form>
+	<ul>
+	<li class="best-cook">
+	<label for="best-cook">一番おすすめする料理:</label>
+	<br>
+	<input type="text1" id="best-cook" name="best-cook"  size="8"/>
+	</li>
+	<br>
+	<li>
+	<label for="gazo">画像:</label>
+	<div class="imgInput">
+	<input type="file" name="file2">
+	<img src="img/1.jpg" width="220px" height="170px" alt="" class="imgView">
+	</div>
+	</li>
+	<li>
+	<label for="cook">コメント <br></label>
+	<textarea name="freeans" rows="10" cols="25"> </textarea>
+	</li>
+	</ul>
+</form>
+</div>
+
+
+
+<div id="favorite">
+
+<div id="osake">
+<label for="osake">おすすめ地酒 <br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
+</div>
+
+<div id="food">
+<label for="food">おすすめ食材<br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
+</div>
+
+<div id="cook">
+<label for="cook">おすすめ一品料理 <br></label>
+<textarea name="freeans" rows="10" cols="25"> </textarea>
+</div>
+
+</div>
+
+<div id="sonota">
+<form>
+<ul>
+
+<li class="HP">
+<label for="HP">店舗のHPのURL:</label>
+<input type="text2" id="HP" name="HP"  size="55" value=http://>
+</li>
+
+<li class="AP">
+<label for="AP">アピールポイント:</label>
+<input type="text2" id="AP" name="AP"  size="55"/>
+</li>
+
+</ul>
+</form>
+</div>
+
+
+<p class="complete">
+<a href="店舗マイページ編集完了.html">
+<input type="submit" value="編集完了" />
+</a>
+</p>
+
+<div class=content>
+<div id="page-top" class="page-top">
+        <p><a id="move-page-top" class="move-page-top"><img src = "../Top_bootstrap/img/pt.png"></a></p>
+</div>
+</div>
+
+</div>
+</body>
+</html>

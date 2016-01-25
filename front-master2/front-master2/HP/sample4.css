@@ -1,0 +1,157 @@
+
+body{
+	color:#555;
+	/*background :url(img/tosa.png),url(img/2haikei.jpg);*/
+	background : url(img/tosa.png),url(img/S_haikei.jpg);
+	background-attachment: fixed;
+  background-size: cover;
+}
+
+
+#site-box {
+	 width : 752px;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+.title_name {
+	text-align: center;
+	font-size: 300%;
+}
+
+.text {
+	text-align: center;
+	font-size: 150%;
+}
+
+input[type="name"] , input[type="e-mail"] {
+	font-size: 90%;
+}
+
+input[type="text1"] {
+	font-size: 120%;
+}
+
+input[type="radio"] {
+	margin-top: 10px;
+}
+
+.kotira {
+	text-align: center;
+}
+
+.joho_left {
+	text-align: left;
+	font-size: 150%;
+}
+
+ul li {
+	list-style: none;
+	margin-top: 10px;
+}
+
+label {
+	margin-right: 10px;
+	width:190px;
+	float: left;
+	font-size: 150%;
+}
+
+
+#All {
+	float:center;
+
+}
+
+#left {
+	float: left;
+ 	width : 50%;
+}
+
+#right {
+	margin-top: 5px;
+	float: right;
+	width : 50%;
+	position : relative;
+}
+
+#best_drink{
+	width: 49%;
+ 	float:left;
+	background-color: #dddddd;
+	border-width: 1px;
+}
+
+#best_cook{
+	width: 49%;
+	float:right;
+	background-color: #dddddd;
+	position: relative;
+	bottom: 2px;
+}
+
+
+#favorite{
+	position:relative;
+	left:35px;
+}
+
+#osake {
+		width: 33%;
+	 float: left;
+}
+
+#food {
+ float:left;
+	width: 33%;
+}
+#cook {
+	float:left;
+	width: 33%;
+}
+
+input[type="text2"] {
+	margin-top: 20px;
+	font-size: 120%;
+}
+
+.complete {
+	float: right;
+
+}
+
+.page-top p
+{
+  margin: 0;
+  padding: 0;
+
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+
+/*
+.move-page-top
+{
+  display: block;
+  background: #D36015;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  /*color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s
+}
+*/
+
+@media screen and (min-width:1130px) {
+  .move-page-top:hover{
+    opacity: 0.85;
+  }
+}

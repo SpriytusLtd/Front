@@ -1,0 +1,46 @@
+header{
+  height:100px;
+  width:100%;
+  position: fixed;
+  /*background: url(./topcss/img/header2.jpg);*/
+  /*background-color: rgba(255, 0, 0, 0.5);*/
+	background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+	opacity: 0.9;
+	top: -8px;
+	right:8px;
+  z-index: 10;
+  color:white;
+}
+
+/*.logo1 {
+  width: 20%;
+  height: 150px;
+	opacity:1;
+}*/
+
+.logo2{
+	width: 20%;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.logo3{
+  width: 60%;
+  height:100px;
+}
+
+.header-left {
+  float: left;
+}
+
+/*.header{
+  width: 100%;
+  background-image: url(./img/header2.jpg);
+}*/
+
+.Copyright{
+  text-align: center;
+  color:#000000;
+}

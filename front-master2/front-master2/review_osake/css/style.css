@@ -1,0 +1,94 @@
+hr.line{
+  border: none;
+  border-top: 2px dotted #999;
+  width: 30%;
+}
+
+body{
+    color: #555;
+    background: url("../img/img1.jpg"), url("../img/img2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+  　width: 750px;
+  　height: 100%;
+}
+
+.text-area {
+ margin: 10px auto;
+ padding: 10px 5px 50px;
+ width: 95%;
+ height: 350px;
+ background-color: #fff;
+ position: relative;
+ top: 0;
+ left:30px;
+
+}
+
+
+#body{
+  width: 750px;
+  height: 100%;
+}
+
+#wrapper{
+  width: 95%;
+}
+
+#info{
+  width: 500px;
+  height: 450px;
+}
+
+#waku1{
+  width: 1000px;
+  height: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#img{
+  float: right;
+  width: 500px;
+  height: 450px;
+}
+
+#review{
+  text-align: center;
+}
+
+#review1{
+  margin: 15px auto;
+  padding: 10px 5px 20px;
+  width: 95%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left:30px;
+}
+
+#review2{
+  margin: 15px auto;
+  padding: 10px 5px 20px;
+  width: 95%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left:30px;
+}
+
+#textbox{
+  margin-left: 45px;
+  float: left;
+  width: 400px;
+  height: 100px;
+}
+
+#star{
+  margin-left: 30px;
+  float: right;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
